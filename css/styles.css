@@ -13,7 +13,6 @@
 }
 
 body {
-    background-color: var(--main-background-color);
     color: var(--main-text-color);
     font-family: Roboto, sans-serif;
     width: auto;
@@ -204,9 +203,8 @@ ul {
 }
 
 .hero-button {
-    display: flex;
+    display: block;
 
-    padding: 10px 32px;
     margin-left: auto;
     margin-right: auto;
     border-radius: 4px;
@@ -229,6 +227,10 @@ ul {
 }
 
 /*SECTION ADV*/
+
+.advantages {
+    padding-top: 94px;
+}
 
 .adv-list {
     display: flex;
@@ -285,6 +287,9 @@ ul {
     margin-right: 30px;
 }
 
+.w-item:last-child {
+    margin-right: 0;
+}
 
 /*TEAM*/
 
