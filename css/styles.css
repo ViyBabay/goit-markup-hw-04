@@ -152,7 +152,6 @@ ul {
 }
 .contacts {
     display: flex;
-    margin-left: 344px;
 }
 
 .contacts .contacts-list + .contacts-list {
@@ -173,6 +172,11 @@ ul {
 
 .head-contacts:hover, .head-contacts:focus {
     color: var(--accent-color);
+}
+
+.head-contacts .head-icon {
+    fill: currentColor;
+    margin-right: 10px;
 }
 
 /*HERO*/
@@ -323,7 +327,7 @@ ul {
 
 .team-item {
     margin-right: 30px;
-    box-shadow: 0px 2px 4px 1px;
+    box-shadow: #757575 1px 2px 4px 1px;
     border-radius: 4px;
 }
 
@@ -372,9 +376,39 @@ ul {
     fill: var(--main-svg-color);
 }
 
-.team-link:hover {
+.team-link:hover, .team-link:focus {
     fill: var(--white-text-color);
     background-color: var(--accent-color);
+}
+
+/*CLIENTS*/
+
+.clients-list {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.clients-item {
+}
+
+.client-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    fill: var(--main-svg-color);
+    padding: 16px 32px;
+    border: 1px solid var(--main-svg-color);
+    border-radius: 4px;
+}
+
+.client-link:hover {
+    fill: var(--accent-color);
+    border: 1px solid var(--accent-color)
 }
 
 /*FOOTER*/
@@ -386,6 +420,11 @@ ul {
     margin-right: auto;
     text-decoration: none;
     background-color: var(--secondary-background-color);
+}
+
+.main-container {
+    display: flex;
+    align-items: baseline;
 }
 
 .adress-item {
@@ -427,6 +466,36 @@ ul {
 .contact:hover,
 .contact:focus {
     color: var(--accent-color);
+}
+
+.footer-links {
+    margin-left: 70px;
+}
+
+.join {
+    color: var(--white-text-color);
+    margin-bottom: 20px;
+}
+
+.flinks-list {
+    display: flex;
+    gap: 10px;
+
+}
+
+.footer-link {
+    display: flex;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    fill: var(--white-text-color);
+    background-color: rgba(255, 255, 255, 0.1);;
+}
+
+.footer-link:hover, .footer-link:focus {
+    background-color: var(--accent-color);
 }
 
 /*SECOND PAGE*/
@@ -471,6 +540,7 @@ ul {
 .buttons:hover, .buttons:focus {
     background-color: var(--accent-color);
     color: var(--white-text-color);
+    box-shadow: var(--secondary-text-color) 2px 3px 5px 1px;
 }
 
 .exp-list {
@@ -504,4 +574,9 @@ ul {
     padding:  20px 24px 20px 24px;
     border: 1px solid #eeeeee;
     border-top: none;
+}
+
+.exp-item:hover {
+    box-shadow: #757575 2px 4px 6px 1px;
+
 }
