@@ -239,7 +239,7 @@ ul {
 }
 
 .hero-button:hover {
-    box-shadow: 0px 3px 6px 6px rgba(0, 0, 0, 0.15);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
 /*SECTION ADV*/
@@ -253,8 +253,12 @@ ul {
 }
 
 .adv-icons {
+    display: flex;
+    width: 270px;
+    height: 120px;
+    justify-content: center;
+    align-items: center;
     background-color: var(--third-background-color);
-    padding: 25px 100px;
     margin-bottom: 30px;
     border-radius: 4px;
 }
@@ -326,8 +330,8 @@ ul {
 
 .team-item {
     margin-right: 30px;
-    box-shadow: #757575 1px 2px 4px 1px;
-    border-radius: 4px;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
     background-color: var(--nav-background-color);
 }
 
@@ -398,14 +402,14 @@ ul {
     display: flex;
     align-items: center;
     justify-content: center;
-    
+    width: 170px;
+    height: 92px;
     fill: var(--main-svg-color);
-    padding: 16px 32px;
     border: 1px solid var(--main-svg-color);
     border-radius: 4px;
 }
 
-.client-link:hover {
+.client-link:hover, .client-link:focus {
     fill: var(--accent-color);
     border-color: var(--accent-color)
 }
@@ -472,6 +476,11 @@ ul {
 }
 
 .join {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
     color: var(--white-text-color);
     margin-bottom: 20px;
 }
@@ -539,7 +548,7 @@ ul {
 .buttons:hover, .buttons:focus {
     background-color: var(--accent-color);
     color: var(--white-text-color);
-    box-shadow: var(--secondary-text-color) 2px 3px 5px 1px;
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .exp-list {
@@ -576,6 +585,5 @@ ul {
 }
 
 .exp-item:hover {
-    box-shadow: #757575 2px 4px 6px 1px;
-
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
